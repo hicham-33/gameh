@@ -45,7 +45,8 @@ const generateMetadata = (seed: number) => {
   const ratings = [(4.6 + Math.random() * 0.4).toFixed(1), (4.2 + Math.random() * 0.7).toFixed(1)];
   const downloads = Math.floor(Math.random() * 800) + 120;
   const reviews = Math.floor(Math.random() * 80) + 20;
-  const ageRating = ['4+', '9+', '12+', '17+'][Math.floor(Math.random() * 4)];
+  // FORCE AGE RATING TO 18+
+  const ageRating = '18+';
   const category = ['Action', 'RPG', 'Strategy', 'Arcade', 'Simulation'][Math.floor(Math.random() * 5)];
   return {
     rating: ratings[0],
